@@ -1,0 +1,162 @@
+body {
+  /* width: 1000px; */
+  /* align-content: right;  */
+  text-align: right; 
+}
+
+#webpage{
+  width:1000px;
+  /* align-content: center; */
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  /* float: center; */
+}
+
+#logo {
+  width: 250px;
+  margin-right: 10px;
+  height: inherit;
+  position: absolute;
+  left: 0;
+}
+#header{
+  width: inherit;
+  height: 100px;
+  padding: 0px;
+  position: relative;
+}
+#banner {
+  width: 720px;
+  height: inherit;
+}
+#menu{
+  list-style: none;
+  padding-left: 0;
+  width: 250px;
+  margin-right: 10px;
+  
+}
+#content {
+  padding: 0px;
+  width: 100%;
+  align-content: center;  
+}
+.menuItem:hover{
+  background-color: coral;
+  color: blue;
+}
+
+#content{
+  display: flex;
+}
+
+.menuItem{
+  display: inline-block;
+  background-color: blue;
+  width: 250px;
+  height: 50px;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10%;
+  /* vertical-align: middle;
+  justify-content: center;
+  align-items: center; */
+  margin-bottom: 10px;
+}
+
+#productList{
+padding-left: 0;
+width: 740px;
+  columns: 3;
+  /* column-gap: 0px; */
+}
+
+.product:hover{
+  background-color: blue;
+}
+
+.product {
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+  width: 210px;
+  height: 250px;
+
+  position: relative;
+}
+
+.container {
+  display: inline-block;
+  width: 200px;
+  height: 220px;
+  position: relative;
+}
+
+.container img {
+position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.container .price {
+  color: chartreuse;
+  visibility: hidden;
+  background-color: coral;
+  width: 100%;
+height: 25px;
+  position: absolute;
+bottom: 0%;
+left: 50%;
+transform: translateX(-50%);
+}
+.product:hover .price{
+  visibility: visible;
+}
+
+#contactInformation {
+  width: 1000px;
+  text-align: center;
+  background-color: blue;
+}
+
+.item_control{
+  visibility: hidden;
+  position: absolute;
+  bottom: 0px;
+  left:6px;
+}
+
+.product:hover .item_control{
+  visibility: visible;
+}
+
+#btn-show-cart{
+  position: fixed;
+  right: 10px;
+  top: 50px;
+  background-color: darkorange;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: ghostwhite;
+}
+
+#modal{  
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 25%;
+  top: 20%;
+  width: 50%; /* Full width */
+  height: 20%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(49, 47, 47,0.7); /* Black w/ opacity */
+  color: white;
+}
+
+#btn-check-out{
+  background-color: #fff;
+}
